@@ -33,7 +33,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    background-color: #e9dbd2;
+    background-color: #cccccc;
 }
 
 a {
@@ -56,6 +56,7 @@ a {
     aspect-ratio: 1;
     border-radius: 50%;
     transition: 0.5s;
+    border: #1a1f2c solid 5px;
 }
 
 .left > img:hover {
@@ -117,7 +118,7 @@ a {
     flex: 2;
     border-left: #9b3543 15px solid;
     background-color: #1a1f2c;
-    color: #e9dbd2;
+    color: #cccccc;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -157,7 +158,7 @@ a {
 }
 
 .tech-card:hover {
-    border: #e9dbd2 5px solid;
+    border: #cccccc 5px solid;
 }
 
 .tech-card > img {
@@ -181,7 +182,7 @@ a {
 .project-header > button {
     all: unset;
     border-radius: 50%;
-    border: 3px solid #e9dbd2;
+    border: 3px solid #cccccc;
     width: 30px;
     aspect-ratio: 1;
     text-align: center;
@@ -243,7 +244,7 @@ a {
 .contact-field input, .contact-field textarea {
     all: unset;
     background-color: #282d41;
-    border-bottom: #e9dbd2 3px solid;
+    border-bottom: #cccccc 3px solid;
     padding: 10px 20px;
     width: 90%;
     margin: 10px;
@@ -254,7 +255,7 @@ a {
 }
 
 .contact-field input::placeholder, .contact-field textarea::placeholder {
-    color: #e9dbd2;
+    color: #cccccc;
 }
 
 .contact-field textarea {
@@ -270,7 +271,7 @@ a {
 .contact-field button {
     all: unset;
     padding: 10px 50px;
-    background-color: #e9dbd2;
+    background-color: #cccccc;
     border-radius: 10px;
     color: #1a1f2c;
     font-weight: bold;
@@ -280,7 +281,7 @@ a {
 
 .contact-field button:hover {
     background-color: #9b3543;
-    color: #e9dbd2;
+    color: #cccccc;
 }
 
 @media screen and (max-width: 1025px) {
@@ -296,7 +297,7 @@ a {
         flex: 2;
         border-top: #9b3543 15px solid;
         border-left: #282d41 0 solid;
-        color: #e9dbd2;
+        color: #cccccc;
     }
 
     .tech-card {
