@@ -177,6 +177,8 @@ a {
     text-align: left;
     display: block;
     align-items: center;
+    font-size: 22pt;
+    font-weight: bold;
 }
 
 .project-header > button {
@@ -194,20 +196,10 @@ a {
     top: -5px;
 }
 
-.project-header > a {
-    font-size: 22pt;
-    font-weight: bold;
-    transition: 0.25s;
-}
-
 .project-header > button:hover {
     color: #9b3543;
     border: 3px solid #9b3543;
     cursor: pointer;
-}
-
-.project-header > a:hover {
-    color: #9b3543;
 }
 
 .popup-content {
@@ -235,6 +227,16 @@ a {
 .project-entry li {
     font-size: 16pt;
     text-align: left;
+}
+
+.project-entry li a {
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.25s;
+}
+
+.project-entry li a:hover {
+    color: #9b3543;
 }
 
 .contact-field {
