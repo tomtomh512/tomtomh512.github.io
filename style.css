@@ -167,6 +167,8 @@ a {
     margin-bottom: 5px;
 }
 
+/*=================================================================================================*/
+
 .project-entry {
     padding: 10px;
 }
@@ -224,20 +226,27 @@ a {
     margin: 0;
 }
 
-.project-entry li {
+.project-entry {
     font-size: 16pt;
     text-align: left;
 }
 
-.project-entry li a {
+.project-entry a {
     font-weight: bold;
     text-decoration: underline;
     transition: 0.25s;
 }
 
-.project-entry li a:hover {
+.project-entry a:hover {
     color: #9b3543;
 }
+
+.feature-header {
+    font-size: 24pt;
+    text-align: left;
+}
+
+/*=================================================================================================*/
 
 .contact-field {
     margin-top: 10px;
