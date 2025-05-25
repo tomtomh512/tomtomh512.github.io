@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> Thomas Hsu </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
@@ -57,13 +58,17 @@
             <div class="tech-card"> <img src="logos/python.png"> <br> Python </div>
             <div class="tech-card"> <img src="logos/java.png"> <br> Java </div>
             <div class="tech-card"> <img src="logos/javascript.png"> <br> JavaScript </div>
+            <div class="tech-card"> <img src="logos/typescript.png"> <br> TypeScript </div>
             <div class="tech-card"><img src="logos/react.png"> <br> React </div>
+            <div class="tech-card"><img src="logos/nextjs.png"> <br> Next.js </div>
+            <div class="tech-card"> <img src="logos/flask.png"> <br> Flask </div>
+            <div class="tech-card"> <img src="logos/express.png"> <br> Express </div>
             <div class="tech-card"> <img src="logos/docker.png"> <br> Docker </div>
             <div class="tech-card"> <img src="logos/sql.png"> <br> SQL </div>
             <div class="tech-card"> <img src="logos/mongo.png"> <br> MongoDB </div>
             <div class="tech-card"> <img src="logos/firebase.png"> <br> Google Firebase </div>
             <div class="tech-card"> <img src="logos/pytorch.png"> <br> PyTorch </div>
-<!--            <div class="tech-card"> <img src="logos/scikit-learn.png"> <br> scikit-learn </div>-->
+            <div class="tech-card"> <img src="logos/scikit-learn.png"> <br> scikit-learn </div>
         </section>
 
         <section class="right-child" id="projects">
@@ -114,8 +119,7 @@
                 <h2 class="feature-header"> Features </h2>
                 <ul>
                     <li> Users can write out an expression on a canvas element </li>
-                    <li> Users can write an equal sign, and the solution will appear next to it </li>
-                    <li> Users also have the ability to erase and clear the canvas </li>
+                    <li> A solution is automatically generated when the user completes the problem with an equal sign </li>
                     <li> Changes to the expression are reflected in real time </li>
                 </ul>
             </div>
@@ -124,10 +128,10 @@
 
             <div class="project-entry">
                 <span class="project-header">
-                    <button data-flipped="false"> ▲ </button>
+                    <button style="transform: rotate(180deg);" data-flipped="true"> ▲ </button>
                     Realtime Web Multiplayer Game
                 </span>
-                <div class="popup-content">
+                <div class="popup-content show">
                     <img src="demos/tanks.png">
                     <br>
                     <a href="https://multiplayer-tanks.netlify.app/" target="_blank">
