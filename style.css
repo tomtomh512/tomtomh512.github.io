@@ -34,7 +34,6 @@ body > section p {
 
 .introduction {
     background-color: #214128;
-    /*padding-bottom: 0;*/
 }
 
 .intro-flex-container {
@@ -56,10 +55,9 @@ body > section p {
 .navbar {
     background-color: black;
     position: sticky;
-    top: 0;
+    top: 5px;
     z-index: 10;
     font-size: 28px;
-    /*border-radius: 0;*/
 }
 
 .navbar ul {
@@ -89,6 +87,12 @@ body > section p {
 
 .about {
     text-align: left;
+}
+
+.tech-stack {
+    background-color: #d2d2d2;
+    text-align: left;
+    color: black;
 }
 
 .experience {
