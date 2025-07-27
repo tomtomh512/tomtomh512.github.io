@@ -1,7 +1,8 @@
 const train = document.getElementById("train");
 
 const totalFrames = 8;
-const frameWidth = 596;
+const frameWidth = 825;
+const frameHeight = 242;
 const animationWidth = totalFrames * frameWidth;
 
 let scrollSpeedFactor;
@@ -12,10 +13,13 @@ let maxX;
 
 function updateDimensions() {
   scrollSpeedFactor = window.innerWidth < 1024 ? 150 : 75;
-  baseDivisor = window.innerWidth < 1024 ? 1.25 : 3.5;
+  baseDivisor = window.innerWidth < 1024 ? 1.5 : 3.5;
   scale = window.innerWidth / baseDivisor / frameWidth;
   maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   maxX = window.innerWidth - frameWidth * scale - frameWidth * 0.05 * scale;
+
+  train.style.width = frameWidth + "px";
+  train.style.height = frameHeight + "px";
 }
 
 function updateScroll() {

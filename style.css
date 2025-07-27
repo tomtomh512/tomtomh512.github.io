@@ -1,7 +1,3 @@
-html {
-    background-color: #c6cebd;
-}
-
 body {
     height: 3000px;
     background-color: #c6cebd;
@@ -11,13 +7,16 @@ body {
 
 #train {
     position: fixed;
-    bottom: 0;              /* Anchor to bottom */
-    left: 0;                /* Anchor to left */
-    width: 596px;
-    height: 199px;
-    background-image: url("spritesheet.png");
+    bottom: 10px;
+    left: 5px;
+    background-image: url("city_of_truro.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     image-rendering: pixelated;
     transform-origin: bottom left;
+}
+
+h1 {
+    margin: 5px;
+    text-align: center;
 }
