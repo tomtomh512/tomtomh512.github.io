@@ -7,7 +7,7 @@ body {
 
 #train {
     position: fixed;
-    bottom: 10px;
+    bottom: 15px;
     left: 5px;
     background-image: url("city_of_truro.png");
     background-repeat: no-repeat;
