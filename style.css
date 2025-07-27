@@ -48,11 +48,11 @@ a {
     color: #282d41;
     padding: 50px 50px 0 50px;
     font-size: 22pt;
-    text-align: left;
+    text-align: center;
 }
 
 .left > img{
-    width: 150px;
+    width: 180px;
     aspect-ratio: 1;
     border-radius: 50%;
     transition: 0.5s;
@@ -75,6 +75,7 @@ a {
     margin-top: 40px;
     padding-left: 20px;
     list-style-type: none;
+    text-align: left;
 }
 
 .navbar > li {
@@ -222,6 +223,10 @@ a {
     margin: 0;
 }
 
+.project-entry > ul > li {
+    margin: 10px auto;
+}
+
 .project-entry {
     font-size: 16pt;
     text-align: left;
@@ -289,6 +294,7 @@ a {
 .contact-field button:hover {
     background-color: #9b3543;
     color: #cccccc;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1025px) {
@@ -299,7 +305,7 @@ a {
     }
 
     .left > img{
-        width: 125px;
+        width: 175px;
     }
 
     body {
