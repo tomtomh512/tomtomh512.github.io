@@ -1,23 +1,24 @@
 const train = document.getElementById("train");
 
-
 const totalFrames = 8;
 const frameWidth = 596;
 const animationWidth = totalFrames * frameWidth;
-const scrollSpeedFactor = window.innerWidth < 1024 ? 150 : 75;
 
-// Scale train to fit half the screen width
-const baseDivisor = window.innerWidth < 1024 ? 1.25 : 3.5;
-const scale = window.innerWidth / baseDivisor / frameWidth;
-train.style.transform = `scale(${scale})`;
+let scrollSpeedFactor;
+let baseDivisor;
+let scale;
+let maxScroll;
+let maxX;
 
-// Max scrollable distance
-const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+function updateDimensions() {
+  scrollSpeedFactor = window.innerWidth < 1024 ? 150 : 75;
+  baseDivisor = window.innerWidth < 1024 ? 1.25 : 3.5;
+  scale = window.innerWidth / baseDivisor / frameWidth;
+  maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  maxX = window.innerWidth - frameWidth * scale - frameWidth * 0.05 * scale;
+}
 
-// Max horizontal distance the train can travel
-const maxX = window.innerWidth - frameWidth * scale - frameWidth * 0.05 * scale;
-
-window.addEventListener("scroll", () => {
+function updateScroll() {
   const scrollY = window.scrollY;
   const scrollPercent = scrollY / maxScroll;
 
@@ -29,4 +30,15 @@ window.addEventListener("scroll", () => {
 
   train.style.backgroundPosition = `-${offsetX}px 0`;
   train.style.transform = `translateX(${translateX}px) scale(${scale})`;
+}
+
+// on load and resize:
+updateDimensions();
+updateScroll();
+
+window.addEventListener("resize", () => {
+  updateDimensions();
+  updateScroll();
 });
+
+window.addEventListener("scroll", updateScroll);
