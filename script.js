@@ -1,5 +1,6 @@
 const train = document.getElementById("train");
 
+
 const totalFrames = 8;
 const frameWidth = 596;
 const animationWidth = totalFrames * frameWidth;
