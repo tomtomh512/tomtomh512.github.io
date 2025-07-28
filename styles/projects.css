@@ -47,7 +47,7 @@
     font-weight: normal;
 }
 
-.project-card h3:hover {
+.project-card a:hover {
     color: #9b3543;
 }
 
