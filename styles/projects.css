@@ -37,7 +37,8 @@
     font-size: 28px;
 }
 
-.project-card h3 {
+.project-card a {
+    display: block;
     margin: 10px 0 0 0;
     font-size: 20px;
     text-decoration: underline;
