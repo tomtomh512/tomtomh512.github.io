@@ -1,0 +1,85 @@
+.project-card {
+    display: inline-flex;
+    width: 90%;
+    border-radius: 10px;
+    transition: 0.25s;
+    background-color: #1a1f2c;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.project-card:last-child {
+    margin-bottom: auto;
+}
+
+.project-card > div:first-child {
+    width: 300px;
+    padding: 20px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.project-card > div:last-child {
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.project-card h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.project-card h3 {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    transition: 0.25s;
+    font-weight: normal;
+}
+
+.project-card h3:hover {
+    color: #9b3543;
+}
+
+.project-card li {
+    margin: 10px auto;
+}
+
+.stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.stack-container > span {
+    background-color: #9b3543;
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1025px) {
+    .project-card {
+        flex-direction: column-reverse;
+    }
+
+    .project-card > div:first-child {
+        width: auto;
+        padding: 2px 20px 20px 20px ;
+    }
+
+    .project-card > div:last-child {
+        padding: 20px 20px 2px 20px;
+    }
+
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/left.css">
     <link rel="stylesheet" href="styles/about-me.css">
     <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
@@ -23,7 +24,6 @@
         <ul class="navbar">
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
-<!--            <li><a href="#tech-stack">Tech Stack</a></li>-->
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
@@ -110,6 +110,73 @@
 
         <section class="right-child" id="projects">
             <h1> Projects </h1>
+
+            <section class="project-card">
+                <div>
+                    <img src="images/demos/wurdle.png" alt="wurdle" />
+                    <div class="stack-container">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>Flask</span>
+                        <span>MongoDB</span>
+                        <span>Docker</span>
+                        <span>WebSockets</span>
+                    </div>
+                    <a href="https://github.com/tomtomh512/Wurdle-Royale" target="_blank">
+                        <h3> GitHub Link </h3>
+                    </a>
+                </div>
+                <div>
+                    <h2> Wurdle Royale </h2>
+                    <p>
+                        Collaborated closely in a team of 4 to develop a Docker-containerized web app of a multiplayer version of Wordle. HTTPS and backend logic are managed with Flask, and live communication between players is enabled through the use of WebSockets. MongoDB is used to maintain user activity, as well as implement a robust user authentication system.
+                    </p>
+                </div>
+            </section>
+
+            <section class="project-card">
+                <div>
+                    <img src="images/demos/map.png" alt="PinPoint" />
+                    <div class="stack-container">
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>React</span>
+                        <span>FastAPI</span>
+                        <span>SQLAlchemy</span>
+                        <span>REST API</span>
+                    </div>
+                    <a href="https://github.com/tomtomh512/PinPoint-Map" target="_blank">
+                        <h3> GitHub Link </h3>
+                    </a>
+                </div>
+                <div>
+                    <h2> PinPoint Map Application </h2>
+                    <p>
+                        Collaborated closely in a team of 4 to develop a Docker-containerized web app of a multiplayer version of Wordle. HTTPS and backend logic are managed with Flask, and live communication between players is enabled through the use of WebSockets. MongoDB is used to maintain user activity, as well as implement a robust user authentication system.
+                    </p>
+                </div>
+            </section>
+
+            <section class="project-card">
+                <div>
+                    <img src="images/demos/calc.gif" alt="Calculator" />
+                    <div class="stack-container">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>Matplotlib</span>
+                        <span>Jupyter Notebook</span>
+                    </div>
+                    <a href="https://github.com/tomtomh512/Handwritten-Arithmetic-Calculator-v2" target="_blank">
+                        <h3> GitHub Link </h3>
+                    </a>
+                </div>
+                <div>
+                    <h2> Handwritten Arithmetic Calculator </h2>
+                    <p>
+                        A program that uses a convolutional neural network developed with PyTorch to recognize handwritten numbers and mathematical symbols. A custom OCR pipeline utilizing OpenCV is used to segment and preprocess user inputs for accurate model prediction.
+                    </p>
+                </div>
+            </section>
         </section>
 
         <section class="right-child" id="contact">
