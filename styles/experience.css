@@ -49,6 +49,7 @@
     .experience-card > div:first-child {
         width: auto;
         border-radius: 10px 10px 0 0;
+        font-size: 22px;
     }
 
     .experience-card h2 {
