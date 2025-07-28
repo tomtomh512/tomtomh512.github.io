@@ -1,0 +1,77 @@
+.experience-card {
+    display: inline-flex;
+    width: 90%;
+    border-radius: 10px;
+    transition: 0.25s;
+    background-color: #1e2230;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.experience-card:last-child {
+    margin-bottom: auto;
+}
+
+.experience-card > div:first-child {
+    width: 140px;
+    padding: 20px;
+    background-color: #282d41;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.experience-card > div:last-child {
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.experience-card h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.experience-card h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.experience-card li {
+    margin: 10px auto;
+}
+
+.stack-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stack-container > span {
+    background-color: #9b3543;
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .experience-card {
+        flex-direction: column;
+    }
+
+    .experience-card > div:first-child {
+        width: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .experience-card h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .experience-card h3 {
+        margin: 0;
+        font-size: 20px;
+    }
+}

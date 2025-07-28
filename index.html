@@ -1,72 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Thomas Hsu</title>
+    <meta charset="UTF-8">
+    <title> Thomas Hsu </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/left.css">
+    <link rel="stylesheet" href="styles/about-me.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
+    <section class="left">
+        <img src="images/profile.png" alt="profile picture">
+        <h1> Thomas Hsu </h1>
+        <hr>
+        Devoted to building quality and creative digital experiences
 
-<section class="introduction">
-    <div class="intro-flex-container">
-        <section>
-            <img src="profile.png" alt="profile picture">
+        <ul class="navbar">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+<!--            <li><a href="#tech-stack">Tech Stack</a></li>-->
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+
+        <nav class="socials">
+            <a href="#contact">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 6" fill="currentColor">
+                    <path d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/tomtomh512" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/thomashsu512/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                </svg>
+            </a>
+        </nav>
+
+    </section>
+    <section class="right">
+
+        <section class="right-child" id="about-me">
+            <h1> About Me </h1>
+
+            <p class="about-me-description">
+                My name is Thomas Hsu, and I'm an aspiring software developer specializing in web development and machine learning, with a deep commitment to creating high-quality digital experiences. I look to combine thoughtful design with visionary development, with the goal of building solutions that deliver on both functionality and creativity.
+            </p>
+            <p class="about-me-description">
+                As a rising senior at the University at Buffalo studying computer science, I am always looking for a challenge that requires both creativity and technical precision. Whether I am working on web applications or machine learning models, I am always striving for intuitive solutions that meet both user needs and engineering standards.
+            </p>
         </section>
-        <section>
-            <h1> Thomas Hsu </h1>
-            <hr>
-            <p> Devoted to building quality and creative digital experiences </p>
+
+        <section class="right-child" id="experience">
+            <h1> Experience </h1>
+
+            <section class="experience-card">
+                <div>
+                    July 2025 - Present
+                </div>
+                <div>
+                    <h2> Freelance Web Developer </h2>
+                    <h3> for Johnny Novo (Freelance Client) </h3>
+                    <ul>
+                        <li>Utilized TypeScript, React, and Google Firebase to build and deploy a fully end-to-end, interactive, serverless website</li>
+                        <li>Scaled and maintained the website serving ~250 daily visitors, ensuring reliability and a smooth user experience</li>
+                        <li>Reduced Firestore operation costs by 28% through implementing optimistic UI updates and paginated data fetching</li>
+                    </ul>
+                    <div class="stack-container">
+                        <span>TypeScript</span>
+                        <span>React</span>
+                        <span>Google Firebase</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience-card">
+                <div>
+                    June 2025 - Present
+                </div>
+                <div>
+                    <h2> Software Developer Intern </h2>
+                    <h3> @ Consulta Immigration </h3>
+                    <ul>
+                        <li>Researched and evaluated OCR and LLM APIs such as AWS Textract, OpenAI GPT-4o, and Mistral AI, generating assessment reports on their accuracy, performance, and cost-effectiveness</li>
+                        <li>Contributed to an automated pipeline to validate user inputs by integrating Google Gemini to extract information from uploaded documents queried via MongoDB, streamlining application review processes</li>
+                        <li>Engineered API routes to connect the NextJS frontend to the ExpressJS server, supporting scalable system modularity</li>
+                    </ul>
+                    <div class="stack-container">
+                        <span>TypeScript</span>
+                        <span>NextJS</span>
+                        <span>ExpressJS</span>
+                        <span>MongoDB</span>
+                        <span>Amazon Web Services</span>
+                        <span>Google Cloud Platform</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+            </section>
         </section>
-    </div>
-</section>
 
-<section class="navbar">
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</section>
+        <section class="right-child" id="projects">
+            <h1> Projects </h1>
+        </section>
 
-<section class="about">
-    <h2> About Me </h2>
-    <p>
-        My name is Thomas Hsu, and I am an aspiring software developer specializing in web development and machine learning, with a deep commitment to creating high-quality digital experiences. I look to combine thoughtful design with visionary development, with the goal of building solutions that deliver on both functionality and creativity.
-    </p>
-    <p>
-        As a rising senior at the University at Buffalo studying computer science, I am always looking for a challenge that requires both creativity and technical precision. Whether I am working on web applications or machine learning models, I am always striving for intuitive solutions that meet both user needs and engineering standards.
-    </p>
-</section>
+        <section class="right-child" id="contact">
+            <h1> Contact Me </h1>
 
-<section class="tech-stack">
-    <h2> Tech Stack </h2>
-    <p> Tech stack </p>
-</section>
+            <form action="https://formspree.io/f/xzzbqrbp" method="POST" class="contact-field">
+                <input type="email" name="email" placeholder="Your e-mail" required>
+                <br />
+                <textarea wrap="soft" name="message" placeholder="Your message" required></textarea>
+                <br />
+                <button type="submit">Send</button>
+            </form>
+        </section>
 
-<section class="experience">
-    <h2> Experience </h2>
-    <p> Experiences </p>
-</section>
-
-<section class="projects">
-    <h2> Projects </h2>
-    <p> Projects </p>
-</section>
-
-<section class="contact">
-    <h2> Contact Me </h2>
-    <p> Contact </p>
-</section>
-
-<div id="scroll-area">
-    <div id="train"></div>
-</div>
-
-<script src="script.js"></script>
+    </section>
 </body>
 </html>
