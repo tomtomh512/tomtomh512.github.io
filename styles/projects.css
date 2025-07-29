@@ -13,7 +13,8 @@
 }
 
 .project-card > div:first-child {
-    width: 300px;
+    width: 30%;
+    max-width: 300%;
     padding: 20px;
     flex-shrink: 0;
     border-radius: 10px;
