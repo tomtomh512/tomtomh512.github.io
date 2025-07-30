@@ -67,20 +67,6 @@
     margin: 10px auto;
 }
 
-.stack-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 16px;
-}
-
-.stack-container > span {
-    background-color: #9b3543;
-    margin: 5px 5px;
-    padding: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
 @media screen and (max-width: 1025px) {
     .project-card {
         flex-direction: column;
