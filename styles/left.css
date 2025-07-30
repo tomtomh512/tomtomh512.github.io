@@ -25,6 +25,11 @@
     font-size: 36pt;
 }
 
+.left > p {
+    margin: 0;
+    font-size: 22pt;
+}
+
 .navbar {
     font-size: 20pt;
     margin-top: 40px;
@@ -66,7 +71,7 @@
 }
 
 @media screen and (max-width: 1025px) {
-    .left {
+    .left > p {
         text-align: center;
         font-size: 16pt;
     }

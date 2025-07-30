@@ -41,6 +41,33 @@
     margin: 10px auto;
 }
 
+.website-preview {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.website-preview img {
+    width: 150px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: 0.25s;
+}
+
+.website-preview img:hover {
+    filter: brightness(70%);
+}
+
+.website-preview a {
+    text-decoration: underline;
+    font-size: 22px;
+    transition: 0.25s;
+}
+
+.website-preview a:hover {
+    color: #9b3543;
+}
+
 @media screen and (max-width: 1025px) {
     .experience-card {
         flex-direction: column;
