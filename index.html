@@ -73,9 +73,10 @@
                     <h2> Software Engineering Intern </h2>
                     <h3> @ Consulta Immigration </h3>
                     <ul>
-                        <li>Researched and evaluated OCR and LLM APIs such as AWS Textract, OpenAI GPT-4o, and Mistral AI, generating assessment reports on their accuracy, performance, and cost-effectiveness</li>
-                        <li>Contributed to an automated pipeline to validate user inputs by integrating Google Gemini to extract information from uploaded documents queried via MongoDB, streamlining application review processes</li>
-                        <li>Engineered RESTful API routes in ExpressJS to support key features in a NextJS application, supporting scalable system operations</li>
+                        <li>Benchmarked OCR and LLM APIs (AWS Textract, OpenAI GPT-4o, etc.) on their performance and cost, producing insights that guided leadership in choosing the most suitable option for information extraction and filtration</li>
+                        <li>Contributed to an automated pipeline to validate user inputs by integrating Google Gemini to extract information from client documents queried via MongoDB, cutting manual review time by 20%</li>
+                        <li>Engineered a document filtering workflow powered by Google Gemini to identify and remove irrelevant pages from client uploads for admins with over 93% accuracy, validated using Jest unit testing</li>
+                        <li>Architected ExpressJS API routes with a NextJS frontend to power a referral system, boosting customer acquisition efforts</li>
                     </ul>
                     <div class="stack-container">
                         <span>TypeScript</span>
@@ -83,7 +84,8 @@
                         <span>ExpressJS</span>
                         <span>MongoDB</span>
                         <span>Amazon Web Services</span>
-                        <span>Google Cloud Platform</span>
+                        <span>Google Firebase</span>
+                        <span>Jest</span>
                     </div>
                 </div>
             </section>
@@ -96,15 +98,17 @@
                     <h2> Freelance Web Developer </h2>
                     <h3> for Johnny Novo (Client) </h3>
                     <ul>
-                        <li>Utilized TypeScript, React, and Google Firebase to build and deploy a fully end-to-end and interactive website for Johnny Novo’s <i> Chicken Wars </i> series featured on Instagram and TikTok</li>
-                        <li>Reduced Firestore operation costs by 28% through implementing optimistic UI updates and paginated data fetching</li>
-                        <li>Scaled and maintained the website serving ~200 daily visitors, ensuring reliability and a smooth user experience</li>
+                        <li>Built and deployed a website for Johnny Novo’s <i>Chicken Wars</i> series featured on Instagram and TikTok using TypeScript, React, and Google Firebase, incorporating interactivity and admin functionality</li>
+                        <li>Reduced Firestore operation costs by 32% through implementing data denormalization, caching, and optimistic UI updates</li>
+                        <li>Integrated a CI/CD pipeline using GitHub Actions, Vitest, and Netlify to enable continuous testing, automated build validation, and rapid production deployments</li>
                     </ul>
 
                     <div class="stack-container">
                         <span>TypeScript</span>
                         <span>React</span>
+                        <span>Vite</span>
                         <span>Google Firebase</span>
+                        <span>Vitest</span>
                     </div>
                     <div class="website-preview">
                         <span>
@@ -128,15 +132,16 @@
             <section class="project-card">
                 <div>
                     <h2> Wurdle Royale </h2>
-                    <p>
-                        Collaborated closely in a team of 4 to develop a Dockerized web app of a multiplayer version of <i> Wordle </i>. HTTPS and backend logic are managed with Flask, and live communication between players is enabled through the use of WebSockets. MongoDB is used to maintain user activity, as well as implement a robust user authentication system.
-                    </p>
+                    <ul>
+                        <li>Collaborated closely in a team of 4 to develop a Dockerized web app of a multiplayer version of Wordle</li>
+                        <li>Managed HTTPS and backend logic using Flask, and enabled live communication between players with WebSockets</li>
+                    </ul>
                     <div class="stack-container">
                         <span>Python</span>
                         <span>JavaScript</span>
+                        <span>Docker</span>
                         <span>Flask</span>
                         <span>MongoDB</span>
-                        <span>Docker</span>
                         <span>WebSockets</span>
                     </div>
                 </div>
@@ -155,9 +160,10 @@
             <section class="project-card">
                 <div>
                     <h2> PinPoint Map Application </h2>
-                    <p>
-                        A full-stack interactive map web application featuring a React frontend and FastAPI backend API. Map interactivity is supported through Leaflet and HERE API provides detailed location data upon search. User authentication is handled with JSON Web Tokens, while SQLAlchemy manages database operations, allowing logged-in users to save locations to lists.
-                    </p>
+                    <ul>
+                        <li>Built a full-stack interactive map application using React and FastAPI to enable location look-ups and saving</li>
+                        <li>Leveraged SQLAlchemy and JSON Web Tokens to implement authentication, and location-saving to lists</li>
+                    </ul>
                     <div class="stack-container">
                         <span>JavaScript</span>
                         <span>Python</span>
@@ -181,9 +187,10 @@
             <section class="project-card">
                 <div>
                     <h2 style="font-size: 24px"> Neural Network Handwriting Calculator </h2>
-                    <p>
-                        A program that uses a convolutional neural network developed with PyTorch to recognize handwritten numbers and mathematical symbols. A custom OCR pipeline utilizing OpenCV is used to segment and preprocess user inputs for accurate model prediction.
-                    </p>
+                    <ul>
+                        <li>A program that uses a convolutional neural network trained with PyTorch to complete handwritten arithmetic by users</li>
+                        <li>Engineered an OCR pipeline using OpenCV to segment and preprocess user inputs for accurate model prediction</li>
+                    </ul>
                     <div class="stack-container">
                         <span>Python</span>
                         <span>PyTorch</span>
@@ -200,6 +207,23 @@
                         <a href="https://github.com/tomtomh512/Handwritten-Arithmetic-Calculator-v2" target="_blank">
                             GitHub Link
                         </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-card">
+                <div>
+                    <h2> TCP Python Web Server </h2>
+                    <ul>
+                        <li>A Dockerized Python TCP web server that handles HTTP requests and WebSocket connections to power a chat app</li>
+                        <li>Implemented HTTP and WebSocket request parsers, including support for image and video file uploads</li>
+                        <li>Integrated MongoDB for persistent storage of user data and cookie-based authentication with hashed tokens</li>
+                    </ul>
+                    <div class="stack-container">
+                        <span>Python</span>
+                        <span>Docker</span>
+                        <span>MongoDB</span>
+                        <span>WebSockets</span>
                     </div>
                 </div>
             </section>
