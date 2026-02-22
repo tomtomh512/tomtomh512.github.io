@@ -1,0 +1,12 @@
+.about-me-description {
+    text-align: left;
+    padding: 10px 50px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1025px) {
+    .about-me-description {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+}

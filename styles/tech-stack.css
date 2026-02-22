@@ -1,0 +1,32 @@
+.tech-card {
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 20px;
+    margin: 8px;
+    border: #9b3543 5px solid;
+    font-size: 16pt;
+    background-color: #282d41;
+    transition: 0.25s;
+}
+
+.tech-card:hover {
+    border: #cccccc 5px solid;
+}
+
+.tech-card > img {
+    width: 50px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1025px) {
+    .tech-card {
+        padding: 8px 25px;
+        margin: 5px;
+        font-size: 14pt;
+    }
+
+    .tech-card > img {
+        width: 35px;
+    }
+}
